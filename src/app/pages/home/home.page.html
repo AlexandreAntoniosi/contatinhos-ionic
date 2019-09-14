@@ -1,0 +1,23 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeXs="12" sizeMd="4" *ngFor="let contact of contacts">
+        <ion-card>
+          <img src="{{ contact.image }}" alt="{{ contact.nome }}">
+          <ion-card-header>
+            <ion-card-title>{{ contact.nome }}</ion-card-title>
+            <ion-card-subtitle>{{ contact.telefone }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-item (click)="editContact(contact)">
+            <ion-icon slot="end" name="more"></ion-icon> Detalhes
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger" (click)="addContact()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
