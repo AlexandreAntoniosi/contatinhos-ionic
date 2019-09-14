@@ -1,0 +1,158 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "47a71fced49eb8d4ba57a1681a417086",
+    "subject": "full",
+    "data": [
+        {
+            "uuid": "6649380e-d5a7-11e9-ae77-85b7331b4d59",
+            "name": "contato",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3000,
+            "routes": [
+                {
+                    "uuid": "6649380f-d5a7-11e9-ae77-85b7331b4d59",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contacts",
+                    "body": "[\n    {\n        \"id\": \"a6af58ad-08d7-4246-bbc9-598c291cbc0b\",\n        \"nome\": \"Adalto Pereira\",\n        \"email\": \"ada@per.com\",\n        \"cpf\": \"76278155095\",\n        \"telefone\":\"169987465321\",\n        \"endereco\":\"Rua 9 de julho 1080\",\n        \"image\":\"http://lorempixel.com/400/200/\"\n    },\n    {\n        \"id\": \"9c6ca5b5-a38a-45ac-af88-db8b7ff0d991\",\n        \"nome\": \"Jurandir Silverio\",\n        \"email\": \"jura@sil.com\",\n        \"cpf\": \"28999109062\",\n        \"telefone\":\"139987458521\",\n        \"endereco\":\"Rua Brasil dos Altos, 1024\",\n        \"image\":\"http://lorempixel.com/400/200/\"\n    },\n    {\n        \"id\": \"9c6asdb5-a38a-45ac-aasd-db8basd0d991\",\n        \"nome\": \"Otávio Ornelas\",\n        \"email\": \"otavio@orn.com\",\n        \"cpf\": \"35335266074\",\n        \"telefone\":\"16997451236\",\n        \"endereco\":\"Rua Sarara Criolo, 2424\",\n        \"image\":\"http://lorempixel.com/400/200/\"\n    }\n]\n",
+                    "latency": 2000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "66493810-d5a7-11e9-ae77-85b7331b4d59",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "contacts",
+                    "body": "{\n    \"message\": \"Contato cadastrado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"0b09b24d-bc8c-400e-8e10-61aa93cd715d\"\n    }\n}",
+                    "latency": 2000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "66493811-d5a7-11e9-ae77-85b7331b4d59",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "contacts/a6af58ad-08d7-4246-bbc9-598c291cbc0b",
+                    "body": "{\n    \"message\": \"Contato alterado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"a6af58ad-08d7-4246-bbc9-598c291cbc0b\"\n    }\n}",
+                    "latency": 2000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "66493812-d5a7-11e9-ae77-85b7331b4d59",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "contacts/a6af58ad-08d7-4246-bbc9-598c291cbc0b",
+                    "body": "{\n    \"message\": \"Contato excluido com sucesso!\",\n    \"success\":true,\n    \"data\": null\n}",
+                    "latency": 2000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "a80690f0-d5aa-11e9-ae77-85b7331b4d59",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "account",
+                    "body": "{\n    \"message\": \"Usuário cadastrado com sucesso!\",\n    \"success\":true\n}",
+                    "latency": 2000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "c5be4b10-d5aa-11e9-ae77-85b7331b4d59",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "account/login",
+                    "body": "{\n    \"success\":true,\n    \"data\": { \n               \"id\":\"f8ddee44-b3d5-49ca-b752-3965a5dfa3be\",\n               \"name\":\"Alexandre Antoniosi\",\n               \"username\":\"Alexandre\",\n               \"email\":\"teste@teste.com\",\n               \"password\":\"\",\n               \"image\":\"https://picsum.photos/300/\"\n            }\n}",
+                    "latency": 2000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "2cf4c140-d5b7-11e9-ae77-85b7331b4d59",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "account/reset",
+                    "body": "{\n    \"success\":true\n}",
+                    "latency": 2000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+                }
+            ]
+        }
+    ]
+}
